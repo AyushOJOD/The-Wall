@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "292919885920",
+    "project_id": "the-wall-50760",
+    "storage_bucket": "the-wall-50760.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292919885920:android:0535f3ef567f16510c4305",
+        "android_client_info": {
+          "package_name": "com.example.the_wall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292919885920-cqp50rcttd5rtrj4cb4oqb9mnmer7v97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUahcEmMDdtpYZGMyojsuAL7-2bvQ1cX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292919885920-cqp50rcttd5rtrj4cb4oqb9mnmer7v97.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "292919885920-q010npiamsoocu6562b9rfl7pda9hukf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.theWall"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292919885920:android:5442bef8e7e6b6fa0c4305",
+        "android_client_info": {
+          "package_name": "com.example.the_wall1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292919885920-cqp50rcttd5rtrj4cb4oqb9mnmer7v97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUahcEmMDdtpYZGMyojsuAL7-2bvQ1cX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292919885920-cqp50rcttd5rtrj4cb4oqb9mnmer7v97.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "292919885920-q010npiamsoocu6562b9rfl7pda9hukf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.theWall"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
