@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +29,14 @@ class _MyRegisterState extends State<MyRegister> {
         UserCredential userCredential = await FirebaseAuth.instance
             .createUserWithEmailAndPassword(email: email, password: password);
         log("user Created");
+
+        FirebaseFirestore.instance
+            .collection("Users")
+            .doc(userCredential.user!.email)
+            .set({
+          "username": emailController.text.split("@")[0],
+          "bio": "Tell About Yourself"
+        });
         if (userCredential.user != null) {
           Navigator.pop(context);
         }

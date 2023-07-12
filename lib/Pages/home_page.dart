@@ -22,6 +22,9 @@ class _HomePageState extends State<HomePage> {
 
   void logOut() async {
     FirebaseAuth.instance.signOut();
+    Navigator.popUntil(context, (route) => route.isFirst);
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => AuthOption()));
   }
 
   void goToPrfilePage() {
@@ -47,9 +50,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
-        backgroundColor: Colors.grey,
-        title: Text("The Wall"),
+        centerTitle: true,
+        backgroundColor: Theme.of(context).colorScheme.background,
+        title: Text(
+          "The Wall",
+        ),
       ),
       drawer: MyDrawer(
         onProfileTap: goToPrfilePage,
@@ -92,6 +99,7 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Expanded(
                       child: MyTextField(

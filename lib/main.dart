@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:the_wall1/theme/dark_theme.dart';
+import 'package:the_wall1/theme/light_theme.dart';
 
 import 'Authentication/authentication.dart';
 import 'Pages/home_page.dart';
@@ -20,10 +22,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'The Wall',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: lightTheme,
+      darkTheme: darkTheme,
       home:
           FirebaseAuth.instance.currentUser != null ? HomePage() : AuthOption(),
     );
